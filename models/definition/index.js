@@ -18,7 +18,7 @@ Role.hasMany(User, {onDelete: 'CASCADE', foreignKey: 'roleId'});
 User.belongsTo(Role, {onDelete: 'CASCADE', foreignKey: 'roleId'});
 
 // users-cart one to one
-Role.hasOne(Cart, {onDelete: 'CASCADE', foreignKey: 'userId'});
+User.hasOne(Cart, {onDelete: 'CASCADE', foreignKey: 'userId'});
 Cart.belongsTo(User, {onDelete: 'CASCADE', foreignKey: 'userId'});
 
 // Products-CartItems one to many

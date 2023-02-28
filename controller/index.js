@@ -13,6 +13,13 @@ module.exports = {
   updateProduct: require("./product/updateProduct"),
   removeProduct: require("./product/removeProduct"),
 
+  //Cart
+  createCart: require("./cart/createCart"),
+  getCart: require("./cart/getCart"),
+  getCartById: require("./cart/getCartById"),
+  updateCart: require("./cart/updateCart"),
+  removeCart: require("./cart/removeCart"),
+
   //roles
   createRole: require("./common/role"),
 

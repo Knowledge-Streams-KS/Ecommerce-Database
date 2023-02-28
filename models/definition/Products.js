@@ -22,7 +22,7 @@ Products.init(
       type: DataTypes.STRING(),
     },
     category: {
-    unique: true,
+  
       allowNull: false,
       type: DataTypes.STRING(),
     },
