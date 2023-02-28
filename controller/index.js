@@ -1,19 +1,19 @@
 module.exports = {
+  //users
+  createUser: require("./users/createUser"),
+  getUser: require("./users/getUser"),
+  getUserById: require("./users/getUserById"),
+  updateUser: require("./users/updateUser"),
+  removeUser: require("./users/removeUser"),
 
-    //users
-    createUser : require("./users/createUser"),
-    //users
-    getUser : require("./users/getUser"),
-    //users
-    getUserById : require("./users/getUserById"),
-    //users
-    updateUser : require("./users/updateUser"),
-    //users
-    removeUser : require("./users/removeUser"),
+  //Products
+  createProduct: require("./product/createProduct"),
+  getProduct: require("./product/getProduct"),
+  getProductById: require("./product/getProductById"),
+  updateProduct: require("./product/updateProduct"),
+  removeProduct: require("./product/removeProduct"),
 
-    //roles
-    createRole : require("./common/role"),
+  //roles
+  createRole: require("./common/role"),
 
-    //  login : require('./users/login'),
-    //  signup : require('./users/signup')
-}
+};
