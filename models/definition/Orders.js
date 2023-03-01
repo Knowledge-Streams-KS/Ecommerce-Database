@@ -1,39 +1,37 @@
-const { Sequelize, Model, INTEGER, DataTypes } = require ('sequelize');
+const { Sequelize, Model, INTEGER, DataTypes } = require("sequelize");
 
 let sequelize = require("../../common/dbConnection");
 
 class Orders extends Model {}
 
 Orders.init(
-    {
-        id:{
-            primaryKey : true,
-            autoIncrement: true,
-            allowNull: false,
-            type: DataTypes.INTEGER(),
-        },
-        
-        quantity:{
-            allowNull: false,
-        type: DataTypes.INTEGER(),
+  {
+    id: {
+      primaryKey: true,
+      autoIncrement: true,
+      allowNull: false,
+      type: DataTypes.INTEGER(),
     },
-    price:{
-        allowNull: false,
-        type: DataTypes.FLOAT(),
+
+    quantity: {
+      allowNull: false,
+      type: DataTypes.INTEGER(),
     },
-    total:{
-        allowNull: false,
-        type: DataTypes.FLOAT(),
+    price: {
+      allowNull: false,
+      type: DataTypes.FLOAT(),
     },
-},
-    {
-    
-        paranoid: true,
-        timestamps: true,
-        sequelize: sequelize,
-        modelName: 'Orders'
-    }   
-    
+    total: {
+      allowNull: false,
+      type: DataTypes.FLOAT(),
+    },
+  },
+  {
+    paranoid: true,
+    timestamps: true,
+    sequelize: sequelize,
+    modelName: "Orders",
+  }
 );
 
-module.exports = ("Orders");
+module.exports = Orders;

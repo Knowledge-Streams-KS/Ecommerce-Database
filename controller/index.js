@@ -20,6 +20,13 @@ module.exports = {
   updateCart: require("./cart/updateCart"),
   removeCart: require("./cart/removeCart"),
 
+  //Orders
+  createOrder: require("./order/createOrder"),
+  getOrder: require("./order/getOrder"),
+  getOrderById: require("./order/getOrderById"),
+  updateOrder: require("./order/updateOrder"),
+  removeOrder: require("./order/removeOrder"),
+
   //roles
   createRole: require("./common/role"),
 

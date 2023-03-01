@@ -27,7 +27,7 @@ var server = http.createServer(app);
  */
 const { db } = require('../models/definition');
 //{ alter: true }
-db.sequelize.sync({ alter: true, logging: true }).then(() => {
+db.sequelize.sync({ alter: true, logging: false }).then(() => {
   server.listen(port);
   server.on('error', onError);
   server.on('listening', onListening);
