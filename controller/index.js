@@ -13,9 +13,12 @@ module.exports = {
   removeUser: require("./users/removeUser"),
 
   //Products
-  createProduct: require("./product/createProduct"),
+  createProduct: require("./product/createProduct"),  
+  createProductBulk: require("./product/createProductBulk"),  
   getProduct: require("./product/getProduct"),
   getProductById: require("./product/getProductById"),
+  getCategory: require('./product/getCategory'),
+  getProductByCategory: require('./product/getProductByCategory'),
   updateProduct: require("./product/updateProduct"),
   removeProduct: require("./product/removeProduct"),
 

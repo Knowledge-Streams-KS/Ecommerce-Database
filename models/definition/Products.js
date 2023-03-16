@@ -19,7 +19,7 @@ Products.init(
     },
     description: {
       allowNull: true,
-      type: DataTypes.STRING(),
+      type: DataTypes.STRING(1124),
     },
     category: {
   
@@ -30,13 +30,18 @@ Products.init(
       allowNull: false,
       type: DataTypes.DOUBLE(),
     },
-    brand: {
-      allowNull: false,
+    image: {
       type: DataTypes.STRING(),
     },
-    url: {
-      type: DataTypes.STRING(),
-    },
+    rating: {
+			type: DataTypes.JSON,
+			rate: {
+				type: DataTypes.FLOAT,
+			},
+			count: {
+				type: DataTypes.INTEGER,
+			},
+		},  
   },
   {
     paranoid: true,
